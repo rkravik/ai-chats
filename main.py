@@ -46,7 +46,7 @@ async def ask_question(request: Request):
 
     # Create the payload with the conversation history and the user's question
     payload = {
-        "model": "llama-3.3-70b-versatile",
+        "model": "openai/gpt-oss-120b",
         "messages": [
             {"role": "system", "content": "You are a helpful assistant."}
         ] + conversation_history[user_ip]
